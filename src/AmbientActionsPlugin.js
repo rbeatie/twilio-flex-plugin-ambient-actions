@@ -1,7 +1,7 @@
 import React from 'react';
 import { VERSION } from '@twilio/flex-ui';
 import { FlexPlugin } from 'flex-plugin';
-import Panel2Composite from './Composites/Panel2.Composite';
+import Panel2Composite from './composites/Panel2.Composite';
 import reducers, { namespace } from './states';
 
 const PLUGIN_NAME = 'AmbientActionsPlugin';

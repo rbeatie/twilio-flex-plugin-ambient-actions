@@ -1,3 +1,20 @@
+# Actions Communicate In Ambient Ways
+
+Plugins have a nuance of existing within the same flow of data but unable to communicate to eachother like lonely islands. Since they cannot see anything excwpt what is nested inside their context  passing data to a component in a different plugin can be difficult and create tight couplings between components.
+ 
+The [ActionsFramework](https://www.twilio.com/docs/flex/actions-framework) is an Event manager based on **Active Events**. Active means that a routine will run by being invoked.
+ 
+This is in contrast to the **Passive Event**. Where a routine is triggered from some event that occurs.
+They listen for an event to happen. The ActionsFramework is able to see itself where ever it can be used, meaning that you can use Actions to communicate from island and island. And not have to change the     
+
+# Composite
+
+`src/composite/Panel2.Composite.js` is a [High Order Component](https://reactjs.org) that registers an Action with the `class React.Component` wrapping `Panel2`.
+
+
+
+# _ Original Plugin Docs _ 
+
 # Your custom Twilio Flex Plugin
 
 Twilio Flex Plugins allow you to customize the appearance and behavior of [Twilio Flex](https://www.twilio.com/flex). If you want to learn more about the capabilities and how to use the API, check out our [Flex documentation](https://www.twilio.com/docs/flex).
