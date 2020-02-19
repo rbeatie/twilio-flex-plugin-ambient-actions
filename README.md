@@ -1,5 +1,5 @@
 # Actions Communicate In Ambient Ways
-
+> WIP for the README please excuse the tpyos.
 Ahoy! 
 
 Thank you for checking out this demo. Let's dive right in. [Flex Plugins](https://www.twilio.com/docs/flex/plugin-builder#plugin-builder-v3) (a React Component) have a nuance. They exist within the same flow of data but unable to communicate with each other like lonely islands. They cannot see each other. Only what is nested inside their context and blind to anything but that within the context they exist. This can make it complicated for passing data from one plugin to the other. A common approach to solving this is to **lift the state** to a mutual context, which is usually containing components as detailed [here in the React docs](https://reactjs.org/docs/lifting-state-up.html). This won't work with Flex Plugins, unfortunately, because they are loaded asynchronously or lazily. The ActionsFramework can address this problem and comes *out-of-the-box* with [Flex-UI](https://www.twilio.com/docs/flex/ui) and [Flex-Plugins](https://www.twilio.com/docs/flex/quickstart/getting-started-plugin).
