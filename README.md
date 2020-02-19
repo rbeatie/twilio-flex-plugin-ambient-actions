@@ -3,9 +3,13 @@
 
 Ahoy! 
 
-Thank you for checking out this demo. Let's dive right in. [Flex Plugins](https://www.twilio.com/docs/flex/plugin-builder#plugin-builder-v3) (a React Component) have a nuance. They exist within the same flow of data but unable to communicate with each other like lonely islands. They cannot see each other. Only what is nested inside their context and blind to anything but that within the context they exist. This can make it complicated for passing data from one plugin to the other. A common approach to solving this is to **lift the state** to a mutual context, which is usually containing components as detailed [here in the React docs](https://reactjs.org/docs/lifting-state-up.html). This won't work with Flex Plugins, unfortunately, because they are loaded asynchronously or lazily. The ActionsFramework can address this problem and comes *out-of-the-box* with [Flex-UI](https://www.twilio.com/docs/flex/ui) and [Flex-Plugins](https://www.twilio.com/docs/flex/quickstart/getting-started-plugin).
+Thank you for taking the time to check out this demo of a technique used when building a [Twilio Flex Plugin](https://wwww.twilio.com/docs/plugin). Let's dive right in.
+
+[Flex Plugins](https://www.twilio.com/docs/flex/plugin-builder#plugin-builder-v3) which are React Components have a nuance about them. They exist within the same flow of data but are unable to communicate with each other like issolated and lonely islands. They cannot see anything but what exsists within them in other words they are blind to the context they exist.
+
+This makes passing data from one plugin to the other need a solution. A common solutionis to **lift the state** to a container component where both can exist. This technique is artfully detailed [here in the React docs](https://reactjs.org/docs/lifting-state-up.html). This won't work with •Flex Plugins*, unfortunately. *Flex Plugins* are loaded asynchronously or lazily making them independant but also not allowing for any to take part of anothers initialization. This is where the [ActionsFramework](https://www.twilio.com/docs/actions-framework) comes in to bridge this gap. Yea!
  
-The [ActionsFramework](https://www.twilio.com/docs/flex/actions-framework) is an Event manager. The ActionsFramework is able to be where ever you have the Flex Gloobal Oject. This means that you can use Actions to pass data from island to island.   
+The [ActionsFramework](https://www.twilio.com/docs/flex/actions-framework) is an Events manager. The ActionsFramework is able to be where ever you have the Flex Global Oject. This means that you can use Actions to pass data from island to island.   
 
 # Composite
 
